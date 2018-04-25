@@ -12,7 +12,7 @@ class EmailParser
   def parse(string)
     #Omit commas and whitespaces and put in an array.
     emails = string.split(/[, \s ]/).reject { |e| e.empty? }
-binding.pry
+
     #Show an array of parsed and unique emails.
     parser = emails.uniq{|e|e}
 
