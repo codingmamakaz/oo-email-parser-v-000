@@ -18,10 +18,10 @@ class EmailParser
     emails.collect do|emails|
       email = self.new
       @@all << self
+      
     end
     @@all
 
-binding.pry
 
   end
 
