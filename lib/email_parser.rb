@@ -16,9 +16,9 @@ class EmailParser
 
     emails.collect do|emails|
       email = self.new
-
+      emails
     end
-  
+
 
 
 
