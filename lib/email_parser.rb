@@ -5,13 +5,14 @@
 
 class EmailParser
 
-  attr_accessor :emails, :email
+  attr_accessor :email
   # @@all = []
 
-  def parse
-    self.new
-    # emails = string.split(/[, \s ]/).reject { |e| e.empty? }
-    # emails
+  def parse(parser)
+    
+    parser = emails.split(/[, \s ]/).reject { |e| e.empty? }
+    unique_emails = parser.uniq{|e|e}
+    
 
 
   end
