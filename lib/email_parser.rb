@@ -10,9 +10,9 @@ class EmailParser
   @@all = []
   binding.pry
 
-  def parse(parser)
+  def parse(string)
     #Omit commas and whitespaces and put in an array.
-    parser = emails.split(/[, \s ]/).reject { |e| e.empty? }
+    parser = string.split(/[, \s ]/).reject { |e| e.empty? }
 
     #Show an array of parsed and unique emails.
     emails = parser.uniq{|e|e}
