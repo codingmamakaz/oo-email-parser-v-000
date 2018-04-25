@@ -8,7 +8,6 @@ class EmailParser
 
   attr_accessor :emails
   @@all = []
-  binding.pry
 
   def parse(string)
     #Omit commas and whitespaces and put in an array.
