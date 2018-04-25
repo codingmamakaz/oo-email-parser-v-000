@@ -7,18 +7,14 @@ require'pry'
 class EmailParser
 
   attr_accessor :emails
+
+  def initialize(string)
+    @emails = string
+  end
   
-  def parse(string)
-    #Omit commas and whitespaces and put in an array.
-    emails = string.split(/[, \s ]/).reject { |e| e.empty? }
-
-    #Show an array of parsed and unique emails.
-    parser = emails.uniq{|e|e}
-
-    parser = self.new
-    parser.emails = emails
-    parser
-
+  def parse
+    email_array = @emails.split(/[, \s ]/).reject { |e| e.empty? }
+    email_array.uniq{|e|e}
   end
 
 end
