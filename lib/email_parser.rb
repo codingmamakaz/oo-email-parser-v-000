@@ -11,7 +11,7 @@ class EmailParser
   def parse
     email = self.new(string)
     emails = string.split(/[, \s ]/).reject { |e| e.empty? }
-    emails
+    email
 
 
   end
