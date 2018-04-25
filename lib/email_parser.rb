@@ -8,11 +8,11 @@ class EmailParser
 
   attr_accessor :emails
   @@all = []
+  binding.pry
 
   def parse(parser)
     #Omit commas and whitespaces and put in an array.
     parser = emails.split(/[, \s ]/).reject { |e| e.empty? }
-    binding.pry
 
     #Show an array of parsed and unique emails.
     emails = parser.uniq{|e|e}
