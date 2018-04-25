@@ -11,7 +11,7 @@ class EmailParser
 
   def parse(string)
     #Omit commas and whitespaces and put in an array.
-    parser = string.split(/[, \s ]/).reject { |e| e.empty? }
+    emails = string.split(/[, \s ]/).reject { |e| e.empty? }
 
     #Show an array of parsed and unique emails.
     emails = parser.uniq{|e|e}
