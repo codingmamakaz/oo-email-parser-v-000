@@ -6,7 +6,7 @@
 class EmailParser
 
   attr_accessor :emails
-  # @@all = []
+  @@all = []
 
   def parse(parser)
     #Omit commas and whitespaces and put in an array.
@@ -16,9 +16,9 @@ class EmailParser
 
     emails.collect do|emails|
       email = self.new
-      emails
+      @@all << self
     end
-
+    @@all
 
 
 
