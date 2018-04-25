@@ -9,7 +9,7 @@ class EmailParser
   # @@all = []
 
   def parse
-    string = self.new
+    self.new(string)
     emails = string.split(/[, \s ]/).reject { |e| e.empty? }
 
 
