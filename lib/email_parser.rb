@@ -14,7 +14,7 @@ class EmailParser
     emails = string.split(/[, \s ]/).reject { |e| e.empty? }
 
     #Show an array of parsed and unique emails.
-    emails = parser.uniq{|e|e}
+    parser = emails.uniq{|e|e}
 
     parser = self.new
     parser.emails = emails
