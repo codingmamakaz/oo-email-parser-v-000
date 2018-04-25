@@ -16,7 +16,7 @@ class EmailParser
     #Show an array of parsed and unique emails.
     emails = parser.uniq{|e|e}
 
-    parser = self.newp
+    parser = self.new
     parser.emails = emails
     parser
 
