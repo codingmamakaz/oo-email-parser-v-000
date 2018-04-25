@@ -18,7 +18,7 @@ class EmailParser
       email = self.new
 
     end
-    end
+  
 
 
 
