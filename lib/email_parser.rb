@@ -7,8 +7,7 @@ require'pry'
 class EmailParser
 
   attr_accessor :emails
-  @@all = []
-
+  
   def parse(string)
     #Omit commas and whitespaces and put in an array.
     emails = string.split(/[, \s ]/).reject { |e| e.empty? }
